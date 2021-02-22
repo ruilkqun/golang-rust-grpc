@@ -44,7 +44,7 @@ drwxr-xr-x  4 lr  staff   128 Feb 22 10:11 proto
 
 ### 7、编译
 ```
-CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o ./bin/golang_client .
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o ./bin/golang-client .
 ```
 
 
@@ -67,7 +67,7 @@ cargo build --bin rust-server
 ```
 
 ## 三、运行
-### 1、先运行rust_server
+### 1、先运行rust-server
 ```
 ./target/debug/rust-server
 
@@ -75,7 +75,7 @@ cargo build --bin rust-server
 ```
 
 
-### 2、接着运行golang_client
+### 2、接着运行golang-client
 ```
 ./bin/golang-client
 
