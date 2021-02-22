@@ -1,7 +1,7 @@
 # golang-rust-grpc
 
 
-## golang_client
+## 一、golang_client
 
 ### 1、环境设置
 ```
@@ -44,11 +44,11 @@ drwxr-xr-x  4 lr  staff   128 Feb 22 10:11 proto
 
 ### 7、编译
 ```
-CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o ./bin/mygrpc_client .
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o ./bin/golang_client .
 ```
 
 
-## rust_server
+## 二、rust_server
 ### 1、编译proto文件
 ```
 创建build.rs:
@@ -63,5 +63,21 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ### 2、编译
 ```
-cargo build --bin hello-server
+cargo build --bin rust-server
+```
+
+## 三、运行
+### 1、先运行rust_server
+```
+./target/debug/rust-server
+
+获取到请求：Request { metadata: MetadataMap { headers: {"content-type": "application/grpc", "user-agent": "grpc-go/1.35.0", "te": "trailers"} }, message: HelloRequest { request: "Sir,I am grpc client!" ensions: Extensions }
+```
+
+
+### 2、接着运行golang_client
+```
+./bin/golang-client
+
+grpc服务端回应 收到请求:Sir,I am grpc client! 回复:Successful! This is grpc server!
 ```
