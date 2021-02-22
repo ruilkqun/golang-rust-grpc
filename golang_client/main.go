@@ -21,7 +21,7 @@ func main() {
 
 	defer conn.Close()
 	c := pb.NewHelloServiceClient(conn)
-	r,err := c.HelloWorld(context.Background(), &pb.HelloRequest{ Request: "Boss,I am grpc client!"})
+	r,err := c.HelloWorld(context.Background(), &pb.HelloRequest{ Request: "Sir,I am grpc client!"})
 	if err != nil {
 		fmt.Println("请求grpc服务端失败！",err)
 		return

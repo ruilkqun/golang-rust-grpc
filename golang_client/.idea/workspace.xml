@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cead345f-7685-4329-bae6-cb13897fa73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/proto/mygrpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rust_server/build.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/mygrpc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/proto/mygrpc.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust_server/.idea/rust_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust_server/.idea/rust_server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rust_server/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../rust_server/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/mygrpc_client" beforeDir="false" afterPath="$PROJECT_DIR$/bin/mygrpc_client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rust_server/proto/mygrpc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../rust_server/proto/mygrpc.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rust_server/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust_server/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rust_server/src/server.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../rust_server/src/server.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
