@@ -13,7 +13,7 @@ pub struct MyHello {}
 #[tonic::async_trait]
 impl HelloService for MyHello {
     async fn hello_world(&self,request:Request<HelloRequest>) -> Result<Response<HelloResponse>, Status>{
-        // println!("获取到请求：{:?}",request);
+        println!("获取到请求：{:?}",request);
         let reply = HelloResponse {
             response: format!("收到请求:{} 回复:Successful! This is grpc server!",request.into_inner().request).into()
         };
