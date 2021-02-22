@@ -1,1 +1,3 @@
+golang_client/.idea
 rust_server/target
+rust_server/.idea
